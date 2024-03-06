@@ -1,0 +1,32 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="apiTestingAutomation" />
+          <option value="apiTestingAutomation" />
+          <option value="apiTestingAutomation" />
+          <option value="apiTestingAutomation" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="commons-codec:commons-codec:1.11" />
+          <option value="org.json:json:20220924" />
+          <option value="com.fasterxml.jackson.core:jackson-databind:2.11.0" />
+          <option value="com.google.guava:guava:28.2-android" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="Fixed in branch" />
+          <option value="Fixed in branch" />
+          <option value="Fixed in branch" />
+          <option value="Fixed in branch" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

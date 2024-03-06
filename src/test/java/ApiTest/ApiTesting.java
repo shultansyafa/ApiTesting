@@ -1,12 +1,10 @@
-package test;
+package ApiTest;
 
 import io.restassured.RestAssured;
 import org.hamcrest.Matchers;
 import org.json.JSONObject;
-import org.junit.jupiter.api.Test;
-
+import org.testng.annotations.Test;
 import java.util.HashMap;
-
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.request;
 
@@ -27,7 +25,6 @@ public class ApiTesting {
     @Test
     public void testGetNegatif() {
 
-            String requestBody = "{ \"parameter\": \"string_value\" }";
             RestAssured.when()
                     .get("https://reqres.in/api/unknown/23")
                     .then().log().all()
@@ -41,8 +38,6 @@ public class ApiTesting {
 
         @Test
         public void testGetEdge(){
-
-        String requestBody = "{ \"parameter\": " + Integer.MAX_VALUE + " }";
 
         RestAssured.when()
                 .get("https://reqres.in/api/users/2")
